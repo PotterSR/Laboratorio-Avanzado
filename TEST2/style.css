@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    min-height: 100vh;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: block;
+    /* Changed from flex to block to allow scrolling */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    color: #a0c4ff;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(160, 196, 255, 0.3);
+}
+
+canvas {
+    display: block;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+#equations-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    background: rgba(30, 30, 50, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.equation-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 3px solid transparent;
+    transition: all 0.2s;
+    font-size: 0.9em;
+}
+
+.equation-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+color: #fff !important;
+}
+
+.theory-box {
+    background: rgba(30, 30, 50, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 20px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.theory-title {
+    font-size: 1.5rem;
+    color: #a0c4ff;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(160, 196, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.theory-content {
+    font-size: 1.1em;
+}
+
+.theory-section {
+    margin-bottom: 25px;
+}
